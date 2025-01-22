@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #3C5966; /* اللون الأساسي للنصوص */
+    line-height: 1.4; /* تقليل تباعد الأسطر */
+}
+
+/* Header Styles */
+header {
+    background-color: #15A6E5; /* اللون الرئيسي للهيدر */
+    color: #ffffff;
+    padding: 20px 10px; /* تقليل التباعد */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* تقليل المسافة بين الصورة والنص */
+}
+
+.profile-img {
+    width: 120px; /* تصغير الصورة */
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    transition: transform 0.3s ease; /* إضافة تأثير تكبير */
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* تكبير الصورة عند الاقتراب */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2em; /* تصغير حجم الخط */
+    color: #ffffff;
+}
+
+.header-text p {
+    margin: 5px 0;
+    font-size: 0.9em; /* تصغير حجم الخط */
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px; /* تصغير حجم الزر */
+    background-color: #E68515; /* لون الزر */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #3885A6; /* لون الزر عند الاقتراب */
+}
+
+/* Section Styles */
+.section {
+    padding: 20px 10px; /* تقليل التباعد */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px; /* تقليل التباعد */
+}
+
+h2 {
+    color: #15A6E5; /* لون العناوين */
+    border-bottom: 2px solid #E68515; /* لون الخط تحت العناوين */
+    display: inline-block;
+    margin-bottom: 10px; /* تقليل المسافة */
+    font-size: 1.5em; /* تصغير حجم العنوان */
+}
+
+/* Contact Information Styles */
+.contact-details p {
+    margin: 8px 0; /* تقليل المسافة بين الأسطر */
+    font-size: 1em;
+}
+
+.contact-details i {
+    margin-right: 8px; /* تقليل المسافة */
+    color: #15A6E5; /* لون الأيقونات */
+}
+
+.social-icons {
+    margin-top: 15px; /* تقليل المسافة */
+}
+
+.social-icons a {
+    color: #15A6E5; /* لون الأيقونات */
+    font-size: 20px; /* تصغير حجم الأيقونات */
+    margin: 0 8px; /* تقليل المسافة */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #E68515; /* لون الأيقونات عند الاقتراب */
+}
+
+/* Experience & Certifications Styles */
+.experience-item, .certification-item {
+    margin-bottom: 20px; /* تقليل المسافة بين العناصر */
+}
+
+.experience-item h3, .certification-item h3 {
+    margin: 0;
+    color: #15A6E5; /* لون العناوين */
+    font-size: 1.2em; /* تصغير حجم العنوان */
+}
+
+.date {
+    color: #3C5966; /* لون التواريخ */
+    font-style: italic;
+    margin: 3px 0; /* تقليل المسافة */
+}
+
+/* Skills Grid Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 مهارات في السطر */
+    gap: 8px; /* تقليل المسافة بين المهارات */
+}
+
+.skill {
+    background-color: #ffffff;
+    padding: 8px; /* تقليل التباعد */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em; /* تصغير حجم الخط */
+    color: #3C5966; /* لون النص */
+}
+
+/* Certificates Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* عرض الصور بشكل متساوٍ */
+    gap: 20px; /* تقليل المسافة بين الصور */
+    padding: 15px 0;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+figure img {
+    width: 100%;
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 8px;
+    display: block; /* لمنع المسافات الزائدة تحت الصور */
+}
+
+figure:hover {
+    transform: scale(1.05); /* تكبير الصورة قليلاً عند الاقتراب */
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #15A6E5;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #15A6E5; /* لون الفوتر */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px; /* تقليل التباعد */
+    margin-top: 30px; /* تقليل المسافة */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 أعمدة للشاشات المتوسطة */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-bottom: 10px; /* تقليل المسافة */
+    }
+
+    .header-text h1 {
+        font-size: 1.8em; /* تصغير حجم العنوان */
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
